@@ -1,0 +1,21 @@
+// sass interprets tilde as /node_modules.
+// "style": "./src/index.scss"
+// https://jaketrent.com/post/package-json-style-attribute
+@import '~@dsb.dk/designsystem';
+
+// can also point straight to the npm package,
+@import './../node_modules/@dsb.dk/designsystem';
+
+/**
+* sass variables and mixins should be better documented,
+* but definitions can be found in the source code
+*/
+
+.h1 {
+  @include font-family(display);
+}
+
+.my-red-box {
+  background-color: $color-red;
+  color: $color-white;
+}

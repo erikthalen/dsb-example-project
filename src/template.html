@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+</head>
+
+<body>
+  <!-- predefined bg-color class -->
+  <div class="bg--blue">
+    <!-- padding-class and headline -->
+    <h1 class="h1 headline-1 p-3">Welcome</h1>
+  </div>
+  <!-- scss variables can be used as well -->
+  <div class="my-red-box">
+    <h2 class="h2 p-9">My project</h2>
+  </div>
+
+  <expand-collapse>
+    <div data-trigger="">Trigger</div>
+    <div data-content="">
+      <button data-close="">×</button>
+      Content
+    </div>
+  </expand-collapse>
+</body>
+
+</html>
