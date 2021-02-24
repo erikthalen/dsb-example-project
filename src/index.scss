@@ -1,10 +1,15 @@
 // sass interprets tilde as /node_modules.
-// "style": "./src/index.scss"
+// package.json { "style": "./src/index.scss" }
 // https://jaketrent.com/post/package-json-style-attribute
+
+// with @use syntax
+// @use '~@dsb.dk/designsystem' as *;
+
+// with @import syntax
 @import '~@dsb.dk/designsystem';
 
 // can also point straight to the npm package,
-@import './../node_modules/@dsb.dk/designsystem';
+// @import './../node_modules/@dsb.dk/designsystem';
 
 /**
 * sass variables and mixins should be better documented,
@@ -16,6 +21,7 @@
 }
 
 .my-red-box {
+  @include grid-cols($cols: 12);
   background-color: $color-red;
   color: $color-white;
 }

@@ -11,16 +11,24 @@
 </head>
 
 <body>
-  <!-- predefined bg-color class -->
-  <div class="bg--blue">
-    <!-- padding-class and headline -->
-    <h1 class="h1 headline-1 p-3">Welcome</h1>
+  <div class="deck deck--shaped bg--grey">
+    <div class="deck__inner">
+      <div class="deck__content col-24 col-s-22">
+        <div class="bg--red">
+          <h1 class="h1 headline-1 pl-6">Welcome</h1>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- scss variables can be used as well -->
-  <div class="my-red-box">
-    <h2 class="h2 p-9">My project</h2>
+  <div class="deck col-24">
+    <div class="deck__inner">
+      <div class="deck__content bg--grey col-24 col-s-22 col-m-20">
+        <h2 class="h2">My project</h2>
+      </div>
+    </div>
   </div>
-
+  
   <expand-collapse>
     <div data-trigger="">Trigger</div>
     <div data-content="">
