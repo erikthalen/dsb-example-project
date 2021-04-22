@@ -83,15 +83,12 @@ module.exports = {
        */
       {
         test: /\.js$/,
-        include: [
-          path.resolve(__dirname, 'src'),
-          /node_modules\/(@dsb.dk)/,
-        ],
+        include: [path.resolve(__dirname, 'src'), /node_modules\/(@dsb.dk)/],
         // exclude: /node_modules/,
         use: [
           {
             loader: 'babel-loader',
-            options: { plugins: ['@babel/plugin-proposal-class-properties'] },
+            // options: { plugins: ['@babel/plugin-proposal-class-properties'] },
           },
           'eslint-loader',
         ],
@@ -111,11 +108,12 @@ module.exports = {
             options: { sourceMap: true, importLoaders: 1 },
           },
           // { loader: "postcss-loader", options: { sourceMap: true } },
+          'resolve-url-loader',
           {
             loader: 'sass-loader',
             options: {
               sourceMap: true,
-              implementation: require("sass"),
+              implementation: require('sass'),
             },
           },
         ],

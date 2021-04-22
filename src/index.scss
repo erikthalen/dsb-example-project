@@ -3,10 +3,10 @@
 // https://jaketrent.com/post/package-json-style-attribute
 
 // with @use syntax
-// @use '~@dsb.dk/designsystem' as *;
+@use '@dsb.dk/designsystem' as *;
 
 // with @import syntax
-@import '~@dsb.dk/designsystem';
+// @import '@dsb.dk/designsystem';
 
 // can also point straight to the npm package,
 // @import './../node_modules/@dsb.dk/designsystem';

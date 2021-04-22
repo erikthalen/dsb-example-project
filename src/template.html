@@ -11,6 +11,637 @@
 </head>
 
 <body>
+
+  <header class="header bg--red">
+    <div class="header__section header__home-link">
+      <a class="header__logo" href="#" title="Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 0 246.113 200.749">
+          <path
+            d="M220.363 87.264l-42.885-74.168C172.42 4.362 164.776 0 154.786 0H69.25C59.264 0 51.61 4.362 46.555 13.096L3.749 87.264c-5.031 8.746-4.974 17.555.026 26.201l42.78 74.188c5.057 8.735 12.71 13.096 22.695 13.096h85.537c9.99 0 17.635-4.361 22.692-13.096l42.857-74.188c5.004-8.646 5.058-17.455.03-26.201"
+            stroke-width="6" stroke="white" fill="none"></path>
+          <path fill="#fff"
+            d="M169.19 117.857h-9.121v-14.969h6.353c8.797 0 12.38 2.185 12.38 8.066 0 5.05-3.422 6.903-9.612 6.903m-9.121-37.704h6.272c5.291 0 10.584.423 10.584 6.074 0 6.259-4.394 7.461-11.237 7.461h-5.62V80.153zm19.546 18.287v-2.11c7.655-.982 10.75-5.58 10.75-11.76 0-11.76-11.077-14.024-21.256-14.024h-22.478v57.217h21.828c11.482 0 24.27-1.66 24.27-16.433 0-8.592-6.68-12.061-13.114-12.89m-64.779 30.228c-7.082 0-13.273-.603-20.278-2.27v-10.359c6.19 1.292 10.751 1.97 16.941 1.97 6.272 0 12.299-.917 12.299-7.248 0-12.815-28.67-1.618-28.67-24.836 0-12.437 11.238-16.282 22.885-16.282 5.459 0 10.912.454 16.37 1.112v10.058c-4.968-.66-8.306-.962-13.272-.962-5.136 0-11.65-.18-11.65 5.698 0 10.704 29.237 2.188 29.237 24.575 0 14.247-12.377 18.544-23.862 18.544m-58.587-11.036h-6.76V80.756h7.492c7.005 0 18.16 2.381 18.16 17.835 0 13.644-7.328 19.041-18.892 19.041m2.036-47.086H35.48v57.217h24.516c6.351 0 29.4-4.07 29.4-28.722 0-23.594-15.717-28.495-31.11-28.495">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="header__section header__section--right bg--red">
+      <div class="header-nav-dock">
+        <div class="header-nav-dock__item">
+          <p class="mini header-nav-dock__name">Mette</p>
+
+          <p class="mini header-nav-dock__points">1337 point</p>
+        </div>
+
+        <button title="Login" class="header-nav-dock__item is-hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M437 331c-28-28-61-49-97-61a148 148 0 10-168 0A255 255 0 000 512h40a216 216 0 01432 0h40c0-68-27-133-75-181zm-181-75a108 108 0 110-216 108 108 0 010 216z">
+            </path>
+          </svg>
+        </button>
+
+        <button class="header-nav-dock__item" title="Search" data-trigger="-wull0xevq">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">
+            <path
+              d="M447 428L337.6 318.4A192.5 192.5 0 00192.4 0C86.3 0 0 86.3 0 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126-47.2L428.2 447a13.2 13.2 0 0019 0 13.5 13.5 0 000-19zM27 192.3C27 101.1 101 27 192.3 27c91.1 0 165.3 74.2 165.3 165.3s-74.2 165.4-165.4 165.4A165.6 165.6 0 0127 192.3z">
+            </path>
+          </svg>
+        </button>
+
+        <button class="header-nav-dock__item" title="Menu" data-trigger="-k8eotbvk2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -53 384 384">
+            <path
+              d="M368 155H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 32H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 277H16a16 16 0 010-32h352a16 16 0 010 32zm0 0">
+            </path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <fly-out role="dialog" tabindex="-1" data-trap-focus="true" data-disable-scroll="true"
+      data-close-on-body-click="true" data-slow="" data-move-body="true" class="header-dropdown bg--red"
+      data-content="-k8eotbvk2">
+      <div class="header-dropdown__control">
+        <button data-close="" title="Close" class="header-dropdown__button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M284.29 256L506.14 34.14a20 20 0 10-28.28-28.28L256 227.72 34.14 5.86A20 20 0 105.86 34.14L227.7 256 5.87 477.86a20 20 0 1028.28 28.28L256 284.3l221.86 221.85c3.9 3.9 9.02 5.86 14.14 5.86s10.24-1.95 14.14-5.86a20 20 0 000-28.28L284.3 256z">
+            </path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="deck bg--red deck--collapse">
+        <div class="deck__inner">
+          <div class="deck__content col-22 col-s-20">
+            <nav class="header-menu">
+              <div class="header-menu__left col-22 col-m-10">
+                <ul class="list">
+                  <!---->
+                  <li class="list__item trumpet">
+                    <a href="#" class="link trumpet">DSB Plus</a>
+                  </li>
+                  <!---->
+                  <li class="list__item trumpet">
+                    <a href="#" class="link trumpet">Ansvar &amp; Miljø</a>
+                  </li>
+                  <!---->
+                  <li class="list__item trumpet">
+                    <a href="#" class="link trumpet">Om DSB</a>
+                  </li>
+                  <!---->
+                </ul>
+              </div>
+              <div class="header-menu__right col-22 col-m-10">
+                <ul class="list">
+                  <!---->
+                  <li class="list__item headline-2">
+                    <a href="#" class="link headline-2">Trafikinformation</a>
+                  </li>
+                  <!---->
+                  <li class="list__item headline-2">
+                    <a href="#" class="link headline-2">Billetter &amp; service</a>
+                  </li>
+                  <!---->
+                  <li class="list__item headline-2">
+                    <a href="#" class="link headline-2">Erhverv</a>
+                  </li>
+                  <!---->
+                  <li class="list__item headline-2">
+                    <a href="#" class="link headline-2">Kundeservice &amp; kontakt</a>
+                  </li>
+                  <!---->
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </fly-out>
+
+    <fly-out role="dialog" tabindex="-1" data-trap-focus="true" data-disable-scroll="true"
+      data-close-on-body-click="true" data-slow="" data-move-body="true" class="header-dropdown bg--red"
+      data-content="-wull0xevq">
+      <div class="header-dropdown__control">
+        <button data-close="" title="Close" class="header-dropdown__button header-dropdown__button--inset">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M284.29 256L506.14 34.14a20 20 0 10-28.28-28.28L256 227.72 34.14 5.86A20 20 0 105.86 34.14L227.7 256 5.87 477.86a20 20 0 1028.28 28.28L256 284.3l221.86 221.85c3.9 3.9 9.02 5.86 14.14 5.86s10.24-1.95 14.14-5.86a20 20 0 000-28.28L284.3 256z">
+            </path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="deck bg--red deck--collapse">
+        <div class="deck__inner">
+          <div class="deck__content col-22 col-s-20">
+            <div class="header-search">
+              <form class="header-search__form">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">
+                  <path
+                    d="M447 428L337.6 318.4A192.5 192.5 0 00192.4 0C86.3 0 0 86.3 0 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126-47.2L428.2 447a13.2 13.2 0 0019 0 13.5 13.5 0 000-19zM27 192.3C27 101.1 101 27 192.3 27c91.1 0 165.3 74.2 165.3 165.3s-74.2 165.4-165.4 165.4A165.6 165.6 0 0127 192.3z">
+                  </path>
+                </svg>
+                <input autofocus="" class="header-search__input" type="search" id="site-search" name="q"
+                  aria-label="Search through site content" placeholder="Hvad søger du?" />
+              </form>
+
+              <div class="header-search__suggestions">
+                <p class="mini">Populære søgeord:</p>
+
+                <!---->
+                <a href="#" class="tag paragraph-standard">
+                  <!---->
+                  Hund
+                  <!---->
+                </a>
+                <!---->
+                <a href="#" class="tag paragraph-standard">
+                  <!---->
+                  Barnevågn
+                  <!---->
+                </a>
+                <!---->
+                <a href="#" class="tag paragraph-standard">
+                  <!---->
+                  Interrail
+                  <!---->
+                </a>
+                <!---->
+                <a href="#" class="tag paragraph-standard">
+                  <!---->
+                  Julen 2020
+                  <!---->
+                </a>
+                <!---->
+                <a href="#" class="tag paragraph-standard">
+                  <!---->
+                  Covid
+                  <!---->
+                </a>
+                <!---->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fly-out>
+  </header>
+
+  <mobile-hide class="bg--red expanded">
+    <form tabindex="0" class="header-form">
+      <!-- doesn't work when it's a <button>(?) -->
+      <div class="header-form__close-button js--blur" data-close="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M284.29 256L506.14 34.14a20 20 0 10-28.28-28.28L256 227.72 34.14 5.86A20 20 0 105.86 34.14L227.7 256 5.87 477.86a20 20 0 1028.28 28.28L256 284.3l221.86 221.85c3.9 3.9 9.02 5.86 14.14 5.86s10.24-1.95 14.14-5.86a20 20 0 000-28.28L284.3 256z">
+          </path>
+        </svg>
+      </div>
+
+      <fieldset aria-labeledby="header-form-title" class="col-m-10 col-l-12">
+        <h1 id="header-form-title" class="header-form__title trumpet">Køb billet</h1>
+
+        <div class="header-form__constant">
+          <input-select class="input-text header-form__col header-form__col--full input-text--slim">
+            <div class="input-text__inner">
+              <!-- note - the empty placeholder is to make targetable by the scss -->
+              <input type="text" class="input-text__input" placeholder=" " id="-j8tq58tyh" value="" />
+
+              <label class="input-label" for="-j8tq58tyh">
+                <!---->
+                Fra
+                <!---->
+              </label>
+
+              <div class="input-text__placeholder">
+                <p class="mini">Station, Stoppested, Vej, By, Lokalitet</p>
+              </div>
+
+              <ul class="input-dropdown" data-options="">
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Berlin">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Berlin
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Berlin">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Berlin
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Stockholm">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Stockholm
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Gøteborg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Gøteborg
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Nyborg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Nyborg
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Odense">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Odense
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+              </ul>
+            </div>
+          </input-select>
+
+          <input-select class="input-text header-form__col header-form__col--full input-text--slim">
+            <div class="input-text__inner">
+              <!-- note - the empty placeholder is to make targetable by the scss -->
+              <input type="text" class="input-text__input" placeholder=" " id="-j8tq58tyh" value="" />
+
+              <label class="input-label" for="-j8tq58tyh">
+                <!---->
+                Til
+                <!---->
+              </label>
+
+              <div class="input-text__placeholder">
+                <p class="mini">Station, Stoppested, Vej, By, Lokalitet</p>
+              </div>
+
+              <ul class="input-dropdown" data-options="">
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Aarhus">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Aarhus
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="København">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  København
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Nyborg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Nyborg
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="København">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  København
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Aarhus">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Aarhus
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Fredericia">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Fredericia
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+              </ul>
+            </div>
+          </input-select>
+        </div>
+      </fieldset>
+
+      <div class="header-form__expandable col-m-10 col-l-12">
+        <div class="header-form__expand-content">
+          <input-select class="input-text header-form__col header-form__col--full">
+            <div class="input-text__inner">
+              <!-- note - the empty placeholder is to make targetable by the scss -->
+              <input type="text" class="input-text__input" placeholder=" " id="-j8tq58tyh" value="" />
+
+              <label class="input-label" for="-j8tq58tyh">
+                <!---->
+                Udrejse
+                <!---->
+              </label>
+
+              <div class="input-text__placeholder">
+                <p class="mini">19. mar 2020 11:52</p>
+              </div>
+
+              <ul class="input-dropdown" data-options="">
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Lübeck">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Lübeck
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Aarhus">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Aarhus
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Aarhus">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Aarhus
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Lübeck">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Lübeck
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Aalborg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Aalborg
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+                <li class="input-dropdown__item" tabindex="-1" value="Aarhus">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                    </path>
+                  </svg>
+                  Aarhus
+                  <!--<span class="black">Dropd</span>own item-->
+                </li>
+                <!---->
+              </ul>
+            </div>
+          </input-select>
+
+          <div class="header-form__col header-form__col--full">
+            <input-select class="input-text header-form__col">
+              <div class="input-text__inner">
+                <!-- note - the empty placeholder is to make targetable by the scss -->
+                <input type="text" class="input-text__input" placeholder=" " id="-j8tq58tyh" value="" />
+
+                <label class="input-label" for="-j8tq58tyh">
+                  <!---->
+                  Antal rejsende
+                  <!---->
+                </label>
+
+                <div class="input-text__placeholder">
+                  <p class="mini">1 Vuxen</p>
+                </div>
+
+                <ul class="input-dropdown" data-options="">
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="Aalborg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    Aalborg
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="København">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    København
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="København">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    København
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="Hamborg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    Hamborg
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="Aarhus">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    Aarhus
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="Aalborg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    Aalborg
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                </ul>
+              </div>
+            </input-select>
+
+            <input-select class="input-text header-form__col">
+              <div class="input-text__inner">
+                <!-- note - the empty placeholder is to make targetable by the scss -->
+                <input type="text" class="input-text__input" placeholder=" " id="-j8tq58tyh" value="" />
+
+                <label class="input-label" for="-j8tq58tyh">
+                  <!---->
+                  Pladsbilletter
+                  <!---->
+                </label>
+
+                <div class="input-text__placeholder">
+                  <p class="mini">0 Pladser</p>
+                </div>
+
+                <ul class="input-dropdown" data-options="">
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="Stockholm">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    Stockholm
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="Odense">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    Odense
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="Aarhus">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    Aarhus
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="Nyborg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    Nyborg
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="Lübeck">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    Lübeck
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                  <li class="input-dropdown__item" tabindex="-1" value="Fredericia">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M256 0C154 0 71 83 71 185c0 127 166 314 173 321 6 8 18 8 24 0 7-7 173-194 173-321C441 83 358 0 256 0zm0 279a93 93 0 110-187 93 93 0 010 187z">
+                      </path>
+                    </svg>
+                    Fredericia
+                    <!--<span class="black">Dropd</span>own item-->
+                  </li>
+                  <!---->
+                </ul>
+              </div>
+            </input-select>
+          </div>
+
+          <div class="header-form__submit-area header-form__col header-form__col--full">
+            <!-- [fix this] make into submit button -->
+
+            <a href="#" class="link mini link--no-underline">
+              <span class="link__icon link__icon--pre">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.4 31.4">
+                  <path
+                    d="M28.8 7l-.5.1-2.5.2-.7 1.2-.5-.2-2-1.8-.3-1-.4-1-1.3-1-1.4-.3v.6l1.4 1.5.7.8-.8.4-.7-.2-1-.4.1-.8-1.3-.5-.4 1.8-1.3.3.1 1 1.7.4.3-1.7 1.4.2.6.4h1l.8 1.4 1.8 2-.1.7-1.5-.2-2.6 1.3-1.9 2.2-.2 1h-.7l-1.3-.5-1.2.5.3 1.3.6-.6h.9v1.1l.7.3.8.8 1.2-.3 1.5.2 1.6.4.9.1 1.4 1.7 2.7 1.6-1.8 3.3-1.8.9-.7 2-2.7 1.7-.3 1a15.7 15.7 0 009.4-24z">
+                  </path>
+                  <path
+                    d="M17.5 24l-1.1-2.2 1-2.2-1-.3-1.2-1.2-2.6-.6-.9-1.8v1h-.4l-2.2-3v-2.5L7.4 8.5 4.8 9H3l-.8-.6 1-.9-1 .3a15.7 15.7 0 0015.5 23.5l-.2-2 .7-2.8-.7-2.6zM5.8 5l2.8-.3L10 4l1.5.4 2.3-.1.8-1.3 1.1.2 2.8-.3.8-.8 1-.7 1.6.2h.6A15.6 15.6 0 003.6 5.6l2.2-.6zm10.6-3.4l1.6-1 1 .7-1.5 1.1-1.4.2-.7-.5 1-.5zm-4.8 0l.7.4 1-.3.5.9-2.2.5-1-.6s1-.6 1-.8z">
+                  </path>
+                </svg>
+              </span>
+              Rejser til udlandet
+            </a>
+
+            <button class="button action header-form__col button--ghost">Søg rejse</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </mobile-hide>
+
+
+
   <div class="deck deck--shaped bg--grey">
     <div class="deck__inner">
       <div class="deck__content col-24 col-s-22">
@@ -28,7 +659,7 @@
       </div>
     </div>
   </div>
-  
+
   <expand-collapse>
     <div data-trigger="">Trigger</div>
     <div data-content="">
